@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grafika_filtrowanie_obrazow</title>
+    <script src="main.js"></script>
+    <script src="https://www.marvinj.org/releases/marvinj-0.7.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+
+<input type='file' onchange="readURL(this);" />
+<img id="scream" src="#" alt="your image" width="220" height="277"/>
+<canvas id="myCanvas" width="220" height="277" style="border:1px solid #d3d3d3;"></canvas>
+
+<button onclick="negative()">Negatyw</button>
+<button onclick="colorRed()">ColorRed</button>
+<button onclick="colorGreen()">ColorGreen</button>
+<button onclick="colorBlue()">ColorBlue</button>
+<button onclick="grey()">GreyScale</button>
+<button onclick="brightness()">Brightness</button>
+<button onclick="contrast()">Contrast</button>
+<a id="download" download="image.png"><button type="button" onClick="download()">Download</button></a>
+
+<canvas id="canvas1" width="169" height="210"></canvas>
+
+</body>
+</html>
